@@ -1,0 +1,28 @@
+group 'testhhh'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.logging.log4j:log4j-core:+',
+            'org.openjdk.jmh:jmh-core:+',
+//                'com.aol.simplereact:cyclops-react:+',
+  //          'com.github.Vyacheslav-Lapin.Hegel:hegel-core:master-SNAPSHOT',
+            'io.vavr:vavr:+'
+
+    compileOnly 'org.projectlombok:lombok:+',
+            'edu.washington.cs.types.checker:checker-framework:+',
+            'org.openjdk.jmh:jmh-generator-annprocess:+'
+
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4',
+            'org.mockito:mockito-core:+',
+            'org.hamcrest:java-hamcrest:+'
+
+    testCompileOnly   'org.projectlombok:lombok:+'
+}
