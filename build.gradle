@@ -8,6 +8,13 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
 }
+configurations {
+    testCompile.extendsFrom compileOnly
+}
+
+// this turns logging on in tests:
+test.testLogging.showStandardStreams = true
+
 
 dependencies {
     compile 'org.apache.logging.log4j:log4j-core:+',
@@ -24,5 +31,5 @@ dependencies {
             'org.mockito:mockito-core:+',
             'org.hamcrest:java-hamcrest:+'
 
-    testCompileOnly   'org.projectlombok:lombok:+'
+ //   testCompileOnly   'org.projectlombok:lombok:+'
 }
