@@ -1,8 +1,5 @@
-package httpservpckg;
+package httpNEW;
 
-
-import httpNEW.HelloWorldServer;
-import httpNEW.HttpServer;
 import lombok.extern.log4j.Log4j2;
 import lombok.val;
 import org.junit.jupiter.api.AfterAll;
@@ -17,6 +14,7 @@ import java.util.stream.Collectors;
 import static httpNEW.SocketProcessor.RESPONSE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.jupiter.api.Assertions.*;
 
 @Log4j2
 class HttpServerTest {
